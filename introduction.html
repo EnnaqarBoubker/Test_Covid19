@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,42 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
 </head>
-<body>
-<header></header>
 
-<div class="container-fluid d-flex flex-column">
-    <div class="row justify-content-center">
-        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
-           
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="photos/logo__sante-1.svg" alt="" width="50" >
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+    
+                </ul>
+    
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container d-flex flex-column align-items-center "style="margin-top:-76px">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+
                 <form id="msform">
                     <!-- progressbar -->
                     <ul id="progressbar">
@@ -23,22 +51,33 @@
                         <li id="personal"><strong>questionnaire</strong></li>
                         <li id="confirm"><strong>resultat</strong></li>
                     </ul>
-       </div>  
-    </div> 
-  
-<div class="container " style="background-color: #96C5DC;">
-    <div class="text-center fs-1 text-uppercase " style="color: #1078AD;">introduction</div>
-    <div class="p-4 fs-4">
-        Cette application est gratuite, nous l'avons lancée pour faciliter la tâche des personnes infectées par le virus Corona 19, afin qu'elles connaissent leur situation et comment la gèrent-elles. Nous ne garantissons pas à 100% l'exactitude des informations que vous donnez à cette application. L'Utilisateur reconnaît que l'Application, y compris le test et les autres informations dont je dispose, ne constitue pas une recommandation, un examen, une prescription ou tout autre besoin médical.
-    </div>
-    <div class="ps-4 fs-4">
-        Cette application ne se substitue pas à votre médecin ou à votre pharmacien afin qu'ils puissent vous donner de meilleurs conseils. Hadshi, quelle est la cause du décès avant de consulter un médecin ?
-    </div>   
-</div> 
-<button type="button" class="btn btn-primary p-3" style="width: 140px;">Large button</button>   
-</div>                      
+            </div>
+        </div>
 
-<script class="intro.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script></body>
+        <div class=" pe-4" style="background-color: #96C5DC;">
+            <div class="text-center fs-1 text-uppercase " style="color: #1078AD;">introduction</div>
+            <div class="p-4 fs-4">
+                Cette application est gratuite, nous l'avons lancée pour faciliter la tâche des personnes infectées par
+                le virus Corona 19, afin qu'elles connaissent leur situation et comment la gèrent-elles. Nous ne
+                garantissons pas à 100% l'exactitude des informations que vous donnez à cette application. L'Utilisateur
+                reconnaît que l'Application, y compris le test et les autres informations dont je dispose, ne constitue
+                pas une recommandation, un examen, une prescription ou tout autre besoin médical.
+            </div>
+            <div class="ps-4 fs-4">
+                Cette application ne se substitue pas à votre médecin ou à votre pharmacien afin qu'ils puissent vous
+                donner de meilleurs conseils. Hadshi, quelle est la cause du décès avant de consulter un médecin ?
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary p-3 w-50 mt-5 fs-3" style="width: 140px; background-color:#1078AD">Nous commencons le test</button>
+    </div>
+
+<script></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -116,4 +116,7 @@
 .progress-bar {
     background-color: #673AB7
 }
-
+.col-11.col-sm-9.col-md-7.col-lg-6.col-xl-5.text-center.p-0.mt-3.mb-2 {
+    width: 33rem;
+    padding-left: 66px !important;
+}
