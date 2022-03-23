@@ -32,23 +32,23 @@
       </div>
     </nav>
   </header>
-  <div class="container d-flex justify-content-center mt-5 mb-5">
+  <div class="container justify-content-center mt-5 mb-5">
     <form class="formQuestion border border-2" action="" name="testCovid19">
       <div class="stipper">
         stipper
       </div>
       <div class="form-content">
         <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-          <h4 for="fievre" class="d-block">
+          <h4 class="d-block">
             Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs)?
           </h4>
           <div class="answer d-flex justify-content-center mt-5 gap-5">
-            <input type="radio" name="fievre" id="fievre_oui" class="d-none" value="oui">
-            <label for="fievre_oui" class="border border-2 px-2 btn">OUI</label>
-            <input type="radio" name="fievre" id="fievre_non" class="d-none" value="non">
-            <label for="fievre_non" class="border border-2 px-2 btn">NON</label>
-            <input type="radio" name="fievre" id="fievre_neSaitPas" class="d-none" value="neSaitPas">
-            <label for="fievre_neSaitPas" class="border border-2 px-2 btn">Ne sait pas</label>
+            <input type="radio" name="fievre" id="fievreOui" class="d-none" value="oui">
+            <label for="fievreOui" class="border border-2 px-2 btn">OUI</label>
+            <input type="radio" name="fievre" id="fievreNon" class="d-none" value="non">
+            <label for="fievreNon" class="border border-2 px-2 btn">NON</label>
+            <input type="radio" name="fievre" id="fievreNeSaitPas" class="d-none" value="neSaitPas">
+            <label for="fievreNeSaitPas" class="border border-2 px-2 btn">Ne sait pas</label>
           </div>
       </div>
       <div class="form-group flex-column mt-5 border p-4 vh-70 text-center">
@@ -87,9 +87,9 @@
         </h4>
         <div class="answer d-flex justify-content-center mt-5 gap-5">
           <input type="radio" name="malGorge" id="malGorgeOui" class="d-none" value="oui">
-          <label for="malGorge" class="border border-2 px-2 btn">OUI</label>
+          <label for="malGorgeOui" class="border border-2 px-2 btn">OUI</label>
           <input type="radio" name="malGorge" id="malGorgeNon" class="d-none" value="non">
-          <label for="malGorge" class="border border-2 px-2 btn">NON</label>
+          <label for="malGorgeNon" class="border border-2 px-2 btn">NON</label>
         </div>
       </div>
       <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
@@ -109,9 +109,9 @@
         </h4>
         <div class="answer d-flex justify-content-center mt-5 gap-5">
           <input type="radio" name="fatigue" id="fatigueOui" class="d-none" value="oui">
-          <label for="fatigue" class="border border-2 px-2 btn">OUI</label>
+          <label for="fatigueOui" class="border border-2 px-2 btn">OUI</label>
           <input type="radio" name="fatigue" id="fatigueNon" class="d-none" value="non">
-          <label for="fatigue" class="border border-2 px-2 btn">NON</label>
+          <label for="fatigueNon" class="border border-2 px-2 btn">NON</label>
         </div>
       </div>
       <!-- Facteur de gravité-->
@@ -121,9 +121,9 @@
         </h4>
         <div class="answer d-flex justify-content-center mt-5 gap-5">
           <input type="radio" name="alimenterBoire" id="alimenterBoireOui" class="d-none" value="oui">
-          <label for="alimenterBoire" class="border border-2 px-2 btn">OUI</label>
+          <label for="alimenterBoireOui" class="border border-2 px-2 btn">OUI</label>
           <input type="radio" name="alimenterBoire" id="alimenterBoireNon" class="d-none" value="non">
-          <label for="alimenterBoire" class="border border-2 px-2 btn">NON</label>
+          <label for="alimenterBoireNon" class="border border-2 px-2 btn">NON</label>
         </div>
       </div>
       <!--facteur de gravité-->
@@ -133,9 +133,9 @@
         </h4>
         <div class="answer d-flex justify-content-center mt-5 gap-5">
           <input type="radio" name="geneRespiratoire" id="geneRespiratoireOui" class="d-none" value="oui">
-          <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
+          <label for="geneRespiratoireOui" class="border border-2 px-2 btn">OUI</label>
           <input type="radio" name="geneRespiratoire" id="geneRespiratoireNon" class="d-none" value="non">
-          <label for="geneRespiratoire" class="border border-2 px-2 btn">NON</label>
+          <label for="geneRespiratoireNon" class="border border-2 px-2 btn">NON</label>
         </div>
       </div>
       <!--facteur de gravité-->
@@ -145,13 +145,13 @@
         </h4>
         <div class="answer d-flex justify-content-center mt-5 gap-5">
           <input type="radio" name="sentezVous" id="sentezVousBien" class="d-none" value="bien">
-          <label for="sentezVous" class="border border-2 px-2 btn">Bien</label>
+          <label for="sentezVousBien" class="border border-2 px-2 btn">Bien</label>
           <input type="radio" name="sentezVous" id="sentezVousAssezBien" class="d-none" value="assezBien">
-          <label for="sentezVous" class="border border-2 px-2 btn">Assez Bien</label>
+          <label for="sentezVousAssezBien" class="border border-2 px-2 btn">Assez Bien</label>
           <input type="radio" name="sentezVous" id="sentezVousMal" class="d-none" value="mal">
-          <label for="sentezVous" class="border border-2 px-2 btn">Mal</label>
-          <input type="radio" name="sentezVous" id="sentezVousTesMal" class="d-none" value="tresMal">
-          <label for="sentezVous" class="border border-2 px-2 btn">Tres mal</label>
+          <label for="sentezVousMal" class="border border-2 px-2 btn">Mal</label>
+          <input type="radio" name="sentezVous" id="sentezVousTresMal" class="d-none" value="tresMal">
+          <label for="sentezVousTresMal" class="border border-2 px-2 btn">Tres mal</label>
         </div>
       </div>
       <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
@@ -159,21 +159,17 @@
           Avez-vous d'autre symptôme?
         </h4>
         <div class="answer d-flex justify-content-center mt-5 gap-5">
-          <textarea name="symptome" id="symptome" cols="140" rows="8"></textarea>
+          <textarea name="symptome" id="symptome" cols="90" rows="8"></textarea>
         </div>
       </div>
     </div>
   </form>
-    <!-- <div class="form-group d-flex justify-content-between p-3">
-            <button class="btn border border-2 invisible" id="btnPrecedant">precedant</button>
-            <button class="btn border border-2" id="btnTester">Tester</button>
-            <button class="btn border border-2" id="btnSuivant">suivant</button>
-          </div> -->
+
   <form action="" name="facteurPronostique">
     <div class="form-group flex-column mt-5 border p-4 vh-70 text-center">
       <label for="age" class="form-label d-block h4">Quelle est votre age?</label>
       <div class="answer d-flex justify-content-center mt-5">
-          <input type="number" name="age" id="temperature" min="1" max="130">
+          <input type="number" name="age" id="age" min="1" max="130" placeholder="16 - 160">
       </div>
     </div>
     <div class="form-group flex-column mt-5 border p-4 vh-70 text-center">
@@ -181,7 +177,7 @@
         Quelle est votre poids?
       </label>
       <div class="answer d-flex justify-content-center mt-5">
-        <input type="number" name="poids" id="temperature" min="20" max="250">
+        <input type="number" name="poids" id="poids" min="20" max="250" placeholder="20 - 250">
       </div>
     </div>
     <div class="form-group flex-column mt-5 border p-4 vh-70 text-center">
@@ -189,7 +185,7 @@
         Quelle est votre taille?
       </label>
       <div class="answer d-flex justify-content-center mt-5">
-        <input type="number" name="taille" id="temperature" min="80" max="250" placeholder="80 - 250">
+        <input type="number" name="taille" id="taille" min="80" max="250" placeholder="80 - 250">
       </div>
     </div>
     <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
@@ -197,12 +193,12 @@
         Avez-vous de l’hypertension artérielle ? Ou avez-vous une maladie cardiaque ou vasculaire ? Ou prenez-vous un traitement à visée cardiologique ?
       </h4>
       <div class="answer d-flex justify-content-center mt-5 gap-5">
-        <input type="radio" name="hypertension" id="geneRespiratoireOui" class="d-none" value="oui">
-        <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">NON</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">Ne sait pas</label>
+        <input type="radio" name="hypertension" id="hypertensionOui" class="d-none" value="oui">
+        <label for="hypertensionOui" class="border border-2 px-2 btn">OUI</label>
+        <input type="radio" name="hypertension" id="hypertensionNon" class="d-none" value="non">
+        <label for="hypertensionNon" class="border border-2 px-2 btn">NON</label>
+        <input type="radio" name="hypertension" id="hypertensionNeSaitPas" class="d-none" value="non">
+        <label for="hypertensionNeSaitPas" class="border border-2 px-2 btn">Ne sait pas</label>
       </div>
     </div>
     <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
@@ -210,10 +206,10 @@
         Êtes-vous diabétique ?
       </h4>
       <div class="answer d-flex justify-content-center mt-5 gap-5">
-        <input type="radio" name="hypertension" id="geneRespiratoireOui" class="d-none" value="oui">
-        <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">NON</label>
+        <input type="radio" name="diabetique" id="diabetiqueOui" class="d-none" value="oui">
+        <label for="diabetiqueOui" class="border border-2 px-2 btn">OUI</label>
+        <input type="radio" name="diabetique" id="diabetiqueNon" class="d-none" value="non">
+        <label for="diabetiqueNon" class="border border-2 px-2 btn">NON</label>
       </div>
     </div>
     <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
@@ -221,83 +217,89 @@
         Avez-vous ou avez-vous eu un cancer?
       </h4>
       <div class="answer d-flex justify-content-center mt-5 gap-5">
-        <input type="radio" name="hypertension" id="geneRespiratoireOui" class="d-none" value="oui">
-        <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">NON</label>
+        <input type="radio" name="cancer" id="cancerOui" class="d-none" value="oui">
+        <label for="cancerOui" class="border border-2 px-2 btn">OUI</label>
+        <input type="radio" name="cancer" id="cancerNon" class="d-none" value="non">
+        <label for="cancerNon" class="border border-2 px-2 btn">NON</label>
       </div>
     </div>
     <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-      <h4 for="cancer" class="d-block">
+      <h4 for="maladieRespiratoire" class="d-block">
         Avez-vous une maladie respiratoire ? Ou êtes-vous suivi par un pneumologue ?
       </h4>
       <div class="answer d-flex justify-content-center mt-5 gap-5">
-        <input type="radio" name="hypertension" id="geneRespiratoireOui" class="d-none" value="oui">
-        <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">NON</label>
+        <input type="radio" name="maladieRespiratoire" id="maladieRespiratoireOui" class="d-none" value="oui">
+        <label for="maladieRespiratoireOui" class="border border-2 px-2 btn">OUI</label>
+        <input type="radio" name="maladieRespiratoire" id="maladieRespiratoireNon" class="d-none" value="non">
+        <label for="maladieRespiratoireNon" class="border border-2 px-2 btn">NON</label>
       </div>
     </div>
     <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-      <h4 for="cancer" class="d-block">
+      <h4 for="dialysee" class="d-block">
         Avez-vous une insuffisance rénale chronique dialysée?
       </h4>
       <div class="answer d-flex justify-content-center mt-5 gap-5">
-        <input type="radio" name="hypertension" id="geneRespiratoireOui" class="d-none" value="oui">
-        <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">NON</label>
+        <input type="radio" name="dialysee" id="dialyseeOui" class="d-none" value="oui">
+        <label for="dialyseeOui" class="border border-2 px-2 btn">OUI</label>
+        <input type="radio" name="dialysee" id="dialyseeNon" class="d-none" value="non">
+        <label for="dialyseeNon" class="border border-2 px-2 btn">NON</label>
       </div>
     </div>
     <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-      <h4 for="cancer" class="d-block">
+      <h4 for="maladieChroniqueDuFoie" class="d-block">
         Avez-vous une maladie chronique du foie ?
       </h4>
       <div class="answer d-flex justify-content-center mt-5 gap-5">
-        <input type="radio" name="hypertension" id="geneRespiratoireOui" class="d-none" value="oui">
-        <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">NON</label>
+        <input type="radio" name="maladieChroniqueDuFoie" id="maladieChroniqueDuFoieOui" class="d-none" value="oui">
+        <label for="maladieChroniqueDuFoieOui" class="border border-2 px-2 btn">OUI</label>
+        <input type="radio" name="maladieChroniqueDuFoie" id="maladieChroniqueDuFoieNon" class="d-none" value="non">
+        <label for="maladieChroniqueDuFoieNon" class="border border-2 px-2 btn">NON</label>
       </div>
     </div>
     <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-      <h4 for="cancer" class="d-block">
+      <h4 for="enceinte" class="d-block">
         Êtes-vous enceinte ? 
       </h4>
       <div class="answer d-flex justify-content-center mt-5 gap-5">
-        <input type="radio" name="hypertension" id="geneRespiratoireOui" class="d-none" value="oui">
-        <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">NON</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">Non applicable</label>
+        <input type="radio" name="enceinte" id="enceinteOui" class="d-none" value="oui">
+        <label for="enceinteOui" class="border border-2 px-2 btn">OUI</label>
+        <input type="radio" name="enceinte" id="enceinteNon" class="d-none" value="non">
+        <label for="enceinteNon" class="border border-2 px-2 btn">NON</label>
+        <input type="radio" name="enceinte" id="enceinteNonApplicable" class="d-none" value="non">
+        <label for="enceinteNonApplicable" class="border border-2 px-2 btn">Non applicable</label>
       </div>
     </div>
     <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-      <h4 for="cancer" class="d-block">
+      <h4 for="defensesImmunitaires" class="d-block">
         Avez-vous une maladie connue pour diminuer vos défenses immunitaires 
       </h4>
       <div class="answer d-flex justify-content-center mt-5 gap-5">
-        <input type="radio" name="hypertension" id="geneRespiratoireOui" class="d-none" value="oui">
-        <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">NON</label>
+        <input type="radio" name="defensesImmunitaires" id="defensesImmunitairesOui" class="d-none" value="oui">
+        <label for="defensesImmunitairesOui" class="border border-2 px-2 btn">OUI</label>
+        <input type="radio" name="defensesImmunitaires" id="defensesImmunitairesNon" class="d-none" value="non">
+        <label for="defensesImmunitairesNon" class="border border-2 px-2 btn">NON</label>
       </div>
     </div>
     <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-      <h4 for="cancer" class="d-block">
+      <h4 for="traitement" class="d-block">
         Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive). 
       </h4>
       <div class="answer d-flex justify-content-center mt-5 gap-5">
-        <input type="radio" name="hypertension" id="geneRespiratoireOui" class="d-none" value="oui">
-        <label for="geneRespiratoire" class="border border-2 px-2 btn">OUI</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">NON</label>
-        <input type="radio" name="hypertension" id="geneRespiratoireNon" class="d-none" value="non">
-        <label for="hypertension" class="border border-2 px-2 btn">Ne sait pas</label>
+        <input type="radio" name="traitement" id="traitementOui" class="d-none" value="oui">
+        <label for="traitementOui" class="border border-2 px-2 btn">OUI</label>
+        <input type="radio" name="traitement" id="traitementNon" class="d-none" value="non">
+        <label for="traitementNon" class="border border-2 px-2 btn">NON</label>
+        <input type="radio" name="traitement" id="traitementNeSaitPas" class="d-none" value="neSaitPas">
+        <label for="traitementNeSaitPas" class="border border-2 px-2 btn">Ne sait pas</label>
       </div>
     </div>
   </form>
+
+  <div class="form-group d-flex justify-content-between p-3">
+    <button class="btn border border-2 invisible" id="btnPrecedant">precedant</button>
+    <button class="btn border border-2" id="btnTester">Tester</button>
+    <button class="btn border border-2" id="btnSuivant">suivant</button>
+  </div>
 </div>
 
     <script src="../assets/js/person.js"></script>
