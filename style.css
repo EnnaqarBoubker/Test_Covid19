@@ -1,3 +1,4 @@
+
 .stepper-label {
     color: #1078ad;
     font-weight: bold;
@@ -66,4 +67,52 @@
     font-size: 1.5em;
     font-weight: 700;
     color: #369d53;
+}
+.titre {
+    color: #1078AD;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.two>.width,
+.one {
+    width: 44vw;
+}
+
+.one>.titre-O {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 900;
+    text-align-last: center;
+    color: #1078AD;
+    margin-bottom: 30px;
+}
+
+.one>.text-O {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7F7F7F;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.one>.btn {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: right;
+    color: #1078AD;
+    background: url(./photos/Merged\ bar-60.svg);
+    border: 2px solid #1078AD;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
+.one>.btn:hover {
+    background: linear-gradient(rgba(16, 121, 173, 0.9), rgba(16, 121, 173, 0.9)), url(/assets/imgs/button-bg.png);
+    color: aliceblue;
 }
