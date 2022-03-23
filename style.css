@@ -1,3 +1,6 @@
+.header {
+    background-image: url(../../photos/Merged\ bar-61.svg);
+}
 
 .stepper-label {
     color: #1078ad;
@@ -68,6 +71,7 @@
     font-weight: 700;
     color: #369d53;
 }
+
 .titre {
     color: #1078AD;
     font-size: 28px;
