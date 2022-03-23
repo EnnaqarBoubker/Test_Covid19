@@ -1,122 +1,69 @@
-* {
-    margin: 0;
-    padding: 0
-}
-
-
-
-
-
-
-
-
-
-#msform .action-button {
-    width: 100px;
-    background: #673AB7;
+.stepper-label {
+    color: #1078ad;
     font-weight: bold;
+}
+
+.label-circle-ns {
+    background-color: #1078ad;
+    height: 25px;
+    width: 25px;
+}
+
+.label-circle-s {
+    background-color: #f4cf1b;
+    border: 10px solid #88b7d3;
+    height: 35px;
+    width: 35px;
+}
+
+.lb-circle-container {
+    width: 45px;
+    height: 45px;
+}
+
+.io-card {
+    background-color: #e9ecef;
+    text-align: center;
+    max-width: 1050px;
+}
+
+.card-title {
+    color: #1078ad;
+}
+
+.start-test-button {
+    color: #1078ad;
+    border: 2px solid #1078ad;
+    width: 200px;
+    font-weight: 700;
+    background-color: rgba(16, 121, 173, 0.2);
+    transition: 0.2s;
+}
+
+.start-test-button:hover {
+    background-color: #1078ad;
     color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 0px 10px 5px;
-    float: right
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#progressbar {
-    margin-bottom: 30px;
-    overflow: hidden;
-    color: lightgrey;
-    margin-top:100px
+.bad-result-message {
+    font-size: 45px;
+    font-weight: 900;
+    color: #a94442;
 }
 
-#progressbar .active {
-    color: #673AB7
+.good-result-message {
+    font-size: 45px;
+    font-weight: 900;
+    color: #026534;
 }
 
-#progressbar li {
-    list-style-type: none;
-    font-size: 15px;
-    width: 25%;
-    float: left;
-    position: relative;
-    font-weight: 400
-}
-
-#progressbar #account:before {
-    font-family: FontAwesome;
-    content: "\f13e"
-}
-
-#progressbar #personal:before {
-    font-family: FontAwesome;
-    content: "\f007"
-}
-
-#progressbar #payment:before {
-    font-family: FontAwesome;
-    content: "\f030"
-}
-
-#progressbar #confirm:before {
-    font-family: FontAwesome;
-    content: "\f00c"
-}
-
-#progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    display: block;
+.result-advice {
+    color: #1078ad;
     font-size: 20px;
-    color: #ffffff;
-    background: lightgray;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-    padding: 2px
 }
 
-#progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: lightgray;
-    position: absolute;
-    left: 0;
-    top: 25px;
-    z-index: -1
-}
-
-#progressbar li.active:before,
-#progressbar li.active:after {
-    background: #46c1fa
-}
-
-.progress {
-    height: 20px
-}
-
-.progress-bar {
-    background-color: #673AB7
-}
-.col-11.col-sm-9.col-md-7.col-lg-6.col-xl-5.text-center.p-0.mt-3.mb-2 {
-    width: 33rem;
-    padding-left: 66px !important;
+.call-number {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #369d53;
 }
