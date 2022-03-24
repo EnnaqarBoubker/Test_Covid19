@@ -18,18 +18,25 @@ btnTester.addEventListener("click", function(){
     let testCovid19Form = document.forms['testCovid19'];
     let facteurPronostique = document.forms['facteurPronostique'];
     globalThis.obj = new Person(facteurPronostique['age'].value, facteurPronostique['poids'].value, facteurPronostique['taille'].value);
-    console.log(testCovid19Form.length);
-    console.log(Object.keys(testCovid19Form).length);
-    for(let i = 0 ; i < Object.keys(testCovid19Form).length ; i++){
-        obj.answers[testCovid19Form[i].name] = testCovid19Form[i].value;
-        console.log(testCovid19Form[i].name + " : " + testCovid19Form[i].value);
+
+    for(let i = 0 ; i < testCovid19Form.length ; i++){
+        if (testCovid19Form[i].type == 'radio' && testCovid19Form[i].checked){
+            obj.answers[testCovid19Form[i].name] = testCovid19Form[i].value;
+            console.log(testCovid19Form[i].name + " : " + testCovid19Form[i].value);
+        } else if (testCovid19Form[i].type != 'radio'){
+            obj.answers[testCovid19Form[i].name] = testCovid19Form[i].value;
+            console.log(testCovid19Form[i].name + " : " + testCovid19Form[i].value);
+        }
     }
 
-    // Object.entries(testCovid19Form).forEach(item => {
-    //     console.log(item['fievre'].value);
-    // });
     for(let i = 0 ; i < facteurPronostique.length ; i++){
-        obj.f_pronostiques[facteurPronostique[i].name] = facteurPronostique[i].value;
+        if (facteurPronostique[i].type == 'radio' && facteurPronostique[i].checked){
+            obj.f_pronostiques[facteurPronostique[i].name] = facteurPronostique[i].value;
+            console.log(facteurPronostique[i].name + " : " + facteurPronostique[i].value);
+        } else if (facteurPronostique[i].type != 'radio'){
+            obj.f_pronostiques[facteurPronostique[i].name] = facteurPronostique[i].value;
+            console.log(facteurPronostique[i].name + " : " + facteurPronostique[i].value);
+        }
     }
 
     obj.getFacteurDeGraviteMajeur();
