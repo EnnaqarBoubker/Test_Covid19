@@ -1,5 +1,6 @@
+/*----------------------------------------------------------------mehdi-------------------------------------------------------------*/
 
-.stepper-label {
+.stepper-label {   
     color: #1078ad;
     font-weight: bold;
 }
@@ -11,7 +12,7 @@
 }
 
 .label-circle-s {
-    background-color: #f4cf1b;
+    background-color: #ec7709;
     border: 10px solid #88b7d3;
     height: 35px;
     width: 35px;
@@ -68,6 +69,7 @@
     font-weight: 700;
     color: #369d53;
 }
+/*----------------------------------------------------------------bouker-------------------------------------------------------------*/
 .titre {
     color: #1078AD;
     font-size: 28px;
