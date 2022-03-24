@@ -30,7 +30,7 @@ function testcovid(obj) {
   }
 
 //?     Tout patient avec un seul symptôme parmi fièvre, toux, mal de gorge, courbatures :
- else if (obj.symptompsdoute() >= 1) {
+ else if (obj.symptomeMoidreDoute() >= 1) {
      if (obj.gravite() == 0) {
         console.log(`téléconsultation ou médecin généraliste ou visite à domicile`);   
      }
@@ -40,7 +40,7 @@ function testcovid(obj) {
  } 
  
 //?     Tout patient avec aucun symptôme :
- else if (obg.symptoms() ==  0) {
+ else if (obg.symptome() ==  0) {
              console.log(`Votre situation ne relève probablement pas du Covid-19. N’hésitez pas à contacter votre médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation. Pour toute information concernant le Covid-19 allez vers la page d’accueil.`);
  }
 
