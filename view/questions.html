@@ -36,133 +36,137 @@
     </header>
     <div class="container justify-content-center mt-5 mb-5">
         <form class="formQuestion border border-2" action="" name="testCovid19">
-            <div class="stipper">
-                stipper
-            </div>
-            <div class="form-content">
-                <div class="form-group flex-column mt-5 border p-4 vh-70 text-center">
-                    <h4 class="d-block">
-                        Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs)?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <input type="radio" name="fievre" id="fievreOui" class="d-none" value="oui">
-                        <label for="fievreOui" class="border border-2 px-2 btn">OUI</label>
-                        <input type="radio" name="fievre" id="fievreNon" class="d-none" value="non">
-                        <label for="fievreNon" class="border border-2 px-2 btn">NON</label>
-                        <input type="radio" name="fievre" id="fievreNeSaitPas" class="d-none" value="neSaitPas">
-                        <label for="fievreNeSaitPas" class="border border-2 px-2 btn">Ne sait pas</label>
+            <div class="carousel slide" id="carouselExampleControls" data-bs-interval="false">
+                <div class="form-content carousel-inner">
+                    <div class="form-group carousel-item active flex-column mt-5 border p-4 vh-70 text-center">
+                        <h4 class="d-block">
+                            Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs)?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <input type="radio" name="fievre" id="fievreOui" class="d-none" value="oui">
+                            <label for="fievreOui" class="border border-2 px-2 btn">OUI</label>
+                            <input type="radio" name="fievre" id="fievreNon" class="d-none" value="non">
+                            <label for="fievreNon" class="border border-2 px-2 btn">NON</label>
+                            <input type="radio" name="fievre" id="fievreNeSaitPas" class="d-none" value="neSaitPas">
+                            <label for="fievreNeSaitPas" class="border border-2 px-2 btn">Ne sait pas</label>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group flex-column mt-5 border p-4 vh-70 text-center">
-                    <label for="temperature" class="form-label d-block h4">
+                    <div class="form-group carousel-item flex-column mt-5 border p-4 vh-70 text-center">
+                        <label for="temperature" class="form-label d-block h4">
           Quelle est votre température corporelle?
         </label>
-                    <div class="answer d-flex justify-content-center mt-5">
-                        <input type="number" name="temperature" id="temperature">
+                        <div class="answer d-flex justify-content-center mt-5">
+                            <input type="number" name="temperature" id="temperature">
+                        </div>
+                    </div>
+                    <div class="form-group carousel-item flex-column mt-5  border p-4 vh-70 text-center">
+                        <h4 class="d-block">
+                            Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <input type="radio" name="toux" id="touxOui" class="d-none" value="oui">
+                            <label for="touxOui" class="border border-2 px-2 btn">OUI</label>
+                            <input type="radio" name="toux" id="touxNon" class="d-none" value="non">
+                            <label for="touxNon" class="border border-2 px-2 btn">NON</label>
+                        </div>
+                    </div>
+                    <div class="form-group carousel-item flex-column mt-5  border p-4 vh-70 text-center">
+                        <h4 for="douleursMusculaires" class="d-block">
+                            Avez-vous des douleurs musculaires ou des courbatures inhabituelles ces derniers jours?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <input type="radio" name="douleursMusculaires" id="douleursMusculairesOui" class="d-none" value="oui">
+                            <label for="douleursMusculairesOui" class="border border-2 px-2 btn">OUI</label>
+                            <input type="radio" name="douleursMusculaires" id="douleursMusculairesNon" class="d-none" value="non">
+                            <label for="douleursMusculairesNon" class="border border-2 px-2 btn">NON</label>
+                        </div>
+                    </div>
+                    <div class="form-group carousel-item flex-column mt-5  border p-4 vh-70 text-center">
+                        <h4 for="malGorge" class="d-block">
+                            Avez-vous un mal de gorge apparu ces derniers jours?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <input type="radio" name="malGorge" id="malGorgeOui" class="d-none" value="oui">
+                            <label for="malGorgeOui" class="border border-2 px-2 btn">OUI</label>
+                            <input type="radio" name="malGorge" id="malGorgeNon" class="d-none" value="non">
+                            <label for="malGorgeNon" class="border border-2 px-2 btn">NON</label>
+                        </div>
+                    </div>
+                    <div class="form-group carousel-item flex-column mt-5  border p-4 vh-70 text-center">
+                        <h4 for="diarrhee" class="d-block">
+                            Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles)?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <input type="radio" name="diarrhee" id="diarrheeOui" class="d-none" value="oui">
+                            <label for="diarrheeOui" class="border border-2 px-2 btn">OUI</label>
+                            <input type="radio" name="diarrhee" id="diarrheeNon" class="d-none" value="non">
+                            <label for="diarrheeNon" class="border border-2 px-2 btn">NON</label>
+                        </div>
+                    </div>
+                    <div class="form-group carousel-item flex-column mt-5  border p-4 vh-70 text-center">
+                        <h4 for="fatigue" class="d-block">
+                            Avez-vous une fatigue inhabituelle ces derniers jours? Si oui cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <input type="radio" name="fatigue" id="fatigueOui" class="d-none" value="oui">
+                            <label for="fatigueOui" class="border border-2 px-2 btn">OUI</label>
+                            <input type="radio" name="fatigue" id="fatigueNon" class="d-none" value="non">
+                            <label for="fatigueNon" class="border border-2 px-2 btn">NON</label>
+                        </div>
+                    </div>
+                    <!-- Facteur de gravité-->
+                    <div class="form-group carousel-item flex-column mt-5  border p-4 vh-70 text-center">
+                        <h4 for="alimenterBoire" class="d-block">
+                            Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <input type="radio" name="alimenterBoire" id="alimenterBoireOui" class="d-none" value="oui">
+                            <label for="alimenterBoireOui" class="border border-2 px-2 btn">OUI</label>
+                            <input type="radio" name="alimenterBoire" id="alimenterBoireNon" class="d-none" value="non">
+                            <label for="alimenterBoireNon" class="border border-2 px-2 btn">NON</label>
+                        </div>
+                    </div>
+                    <!--facteur de gravité-->
+                    <div class="form-group carousel-item flex-column mt-5  border p-4 vh-70 text-center">
+                        <h4 for="geneRespiratoire" class="d-block">
+                            Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <input type="radio" name="geneRespiratoire" id="geneRespiratoireOui" class="d-none" value="oui">
+                            <label for="geneRespiratoireOui" class="border border-2 px-2 btn">OUI</label>
+                            <input type="radio" name="geneRespiratoire" id="geneRespiratoireNon" class="d-none" value="non">
+                            <label for="geneRespiratoireNon" class="border border-2 px-2 btn">NON</label>
+                        </div>
+                    </div>
+                    <!--facteur de gravité-->
+                    <div class="form-group carousel-item flex-column mt-5  border p-4 vh-70 text-center">
+                        <h4 for="sentezVous" class="d-block">
+                            Comment vous sentez-vous?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <input type="radio" name="sentezVous" id="sentezVousBien" class="d-none" value="bien">
+                            <label for="sentezVousBien" class="border border-2 px-2 btn">Bien</label>
+                            <input type="radio" name="sentezVous" id="sentezVousAssezBien" class="d-none" value="assezBien">
+                            <label for="sentezVousAssezBien" class="border border-2 px-2 btn">Assez Bien</label>
+                            <input type="radio" name="sentezVous" id="sentezVousMal" class="d-none" value="mal">
+                            <label for="sentezVousMal" class="border border-2 px-2 btn">Mal</label>
+                            <input type="radio" name="sentezVous" id="sentezVousTresMal" class="d-none" value="tresMal">
+                            <label for="sentezVousTresMal" class="border border-2 px-2 btn">Tres mal</label>
+                        </div>
+                    </div>
+                    <div class="form-group carousel-item flex-column mt-5  border p-4 vh-70 text-center">
+                        <h4 for="symptome" class="d-block">
+                            Avez-vous d'autre symptôme?
+                        </h4>
+                        <div class="answer d-flex justify-content-center mt-5 gap-5">
+                            <textarea name="symptome" id="symptome" cols="90" rows="8"></textarea>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-                    <h4 class="d-block">
-                        Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <input type="radio" name="toux" id="touxOui" class="d-none" value="oui">
-                        <label for="touxOui" class="border border-2 px-2 btn">OUI</label>
-                        <input type="radio" name="toux" id="touxNon" class="d-none" value="non">
-                        <label for="touxNon" class="border border-2 px-2 btn">NON</label>
-                    </div>
-                </div>
-                <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-                    <h4 for="douleursMusculaires" class="d-block">
-                        Avez-vous des douleurs musculaires ou des courbatures inhabituelles ces derniers jours?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <input type="radio" name="douleursMusculaires" id="douleursMusculairesOui" class="d-none" value="oui">
-                        <label for="douleursMusculairesOui" class="border border-2 px-2 btn">OUI</label>
-                        <input type="radio" name="douleursMusculaires" id="douleursMusculairesNon" class="d-none" value="non">
-                        <label for="douleursMusculairesNon" class="border border-2 px-2 btn">NON</label>
-                    </div>
-                </div>
-                <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-                    <h4 for="malGorge" class="d-block">
-                        Avez-vous un mal de gorge apparu ces derniers jours?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <input type="radio" name="malGorge" id="malGorgeOui" class="d-none" value="oui">
-                        <label for="malGorgeOui" class="border border-2 px-2 btn">OUI</label>
-                        <input type="radio" name="malGorge" id="malGorgeNon" class="d-none" value="non">
-                        <label for="malGorgeNon" class="border border-2 px-2 btn">NON</label>
-                    </div>
-                </div>
-                <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-                    <h4 for="diarrhee" class="d-block">
-                        Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles)?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <input type="radio" name="diarrhee" id="diarrheeOui" class="d-none" value="oui">
-                        <label for="diarrheeOui" class="border border-2 px-2 btn">OUI</label>
-                        <input type="radio" name="diarrhee" id="diarrheeNon" class="d-none" value="non">
-                        <label for="diarrheeNon" class="border border-2 px-2 btn">NON</label>
-                    </div>
-                </div>
-                <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-                    <h4 for="fatigue" class="d-block">
-                        Avez-vous une fatigue inhabituelle ces derniers jours? Si oui cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <input type="radio" name="fatigue" id="fatigueOui" class="d-none" value="oui">
-                        <label for="fatigueOui" class="border border-2 px-2 btn">OUI</label>
-                        <input type="radio" name="fatigue" id="fatigueNon" class="d-none" value="non">
-                        <label for="fatigueNon" class="border border-2 px-2 btn">NON</label>
-                    </div>
-                </div>
-                <!-- Facteur de gravité-->
-                <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-                    <h4 for="alimenterBoire" class="d-block">
-                        Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <input type="radio" name="alimenterBoire" id="alimenterBoireOui" class="d-none" value="oui">
-                        <label for="alimenterBoireOui" class="border border-2 px-2 btn">OUI</label>
-                        <input type="radio" name="alimenterBoire" id="alimenterBoireNon" class="d-none" value="non">
-                        <label for="alimenterBoireNon" class="border border-2 px-2 btn">NON</label>
-                    </div>
-                </div>
-                <!--facteur de gravité-->
-                <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-                    <h4 for="geneRespiratoire" class="d-block">
-                        Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <input type="radio" name="geneRespiratoire" id="geneRespiratoireOui" class="d-none" value="oui">
-                        <label for="geneRespiratoireOui" class="border border-2 px-2 btn">OUI</label>
-                        <input type="radio" name="geneRespiratoire" id="geneRespiratoireNon" class="d-none" value="non">
-                        <label for="geneRespiratoireNon" class="border border-2 px-2 btn">NON</label>
-                    </div>
-                </div>
-                <!--facteur de gravité-->
-                <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-                    <h4 for="sentezVous" class="d-block">
-                        Comment vous sentez-vous?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <input type="radio" name="sentezVous" id="sentezVousBien" class="d-none" value="bien">
-                        <label for="sentezVousBien" class="border border-2 px-2 btn">Bien</label>
-                        <input type="radio" name="sentezVous" id="sentezVousAssezBien" class="d-none" value="assezBien">
-                        <label for="sentezVousAssezBien" class="border border-2 px-2 btn">Assez Bien</label>
-                        <input type="radio" name="sentezVous" id="sentezVousMal" class="d-none" value="mal">
-                        <label for="sentezVousMal" class="border border-2 px-2 btn">Mal</label>
-                        <input type="radio" name="sentezVous" id="sentezVousTresMal" class="d-none" value="tresMal">
-                        <label for="sentezVousTresMal" class="border border-2 px-2 btn">Tres mal</label>
-                    </div>
-                </div>
-                <div class="form-group flex-column mt-5  border p-4 vh-70 text-center">
-                    <h4 for="symptome" class="d-block">
-                        Avez-vous d'autre symptôme?
-                    </h4>
-                    <div class="answer d-flex justify-content-center mt-5 gap-5">
-                        <textarea name="symptome" id="symptome" cols="90" rows="8"></textarea>
-                    </div>
+                <div class="form-group d-flex justify-content-between p-3">
+                    <button class="btn border border-2" id="btnPrecedant" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">precedant</button>
+                    <button class="btn border border-2" id="btnTester">Tester</button>
+                    <button class="btn border border-2" id="btnSuivant" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">suivant</button>
                 </div>
             </div>
         </form>
@@ -297,12 +301,16 @@
             </div>
         </form>
 
-        <div class="form-group d-flex justify-content-between p-3">
+        <<<<<<< HEAD <div class="form-group d-flex justify-content-between p-3">
             <button class="btn border border-2 invisible" id="btnPrecedant">precedant</button>
             <button class="btn border border-2" id="btnTester">Tester</button>
             <button class="btn border border-2" id="btnSuivant">suivant</button>
-        </div>
     </div>
+    </div>
+    =======
+
+    </div>
+    >>>>>>> main
 
     <script src="../assets/js/person.js"></script>
     <script src="../assets/js/main.js"></script>
