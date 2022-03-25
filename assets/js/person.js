@@ -2,7 +2,6 @@ class Person {
     age;
     piods;
     taille;
-
     answers = new Array();
     f_pronostiques = new Array();
 
@@ -71,6 +70,7 @@ class Person {
     symptome() {
         return Object.keys(this.answers).length;
     }
+
     boubker() {
         let isValid = false;
         if (this.answers['fievre'] == 'oui') isValid = true;
