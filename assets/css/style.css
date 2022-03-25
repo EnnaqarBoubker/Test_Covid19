@@ -3,5 +3,20 @@
 }
 
 .vh-70 {
-    height: 70vh !important;
+    height: 50vh !important;
+}
+
+.btn {
+    width: 15%;
+    height: 10%;
+}
+
+.btn:hover {
+    background-color: rgb(65, 112, 214);
+    color:white
+}
+
+.btnClicked {
+    background-color: rgb(44, 102, 37) !important;
+    color:white !important;
 }
