@@ -14,7 +14,7 @@ buttons.forEach(btn => {
 let btnTester = document.getElementById("btnTester");
 
 
-btnTester.addEventListener("click", function(){
+btnTester.addEventListener("click", function(e){
     let testCovid19Form = document.forms['testCovid19'];
     let facteurPronostique = document.forms['facteurPronostique'];
     globalThis.obj = new Person(facteurPronostique['age'].value, facteurPronostique['poids'].value, facteurPronostique['taille'].value);
@@ -41,4 +41,5 @@ btnTester.addEventListener("click", function(){
 
     obj.getFacteurDeGraviteMajeur();
     obj.getFacteurDeGraviteMineur();
+    e.preventDefault();
 });
