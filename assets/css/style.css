@@ -3,7 +3,7 @@
 }
 
 .vh-70 {
-    height: 70vh !important;
+    height: 50vh !important;
 }
 
 .btn {
@@ -19,8 +19,4 @@
 .btnClicked {
     background-color: rgb(44, 102, 37) !important;
     color:white !important;
-}
-
-.formQuestion {
-    overflow: none;
 }
