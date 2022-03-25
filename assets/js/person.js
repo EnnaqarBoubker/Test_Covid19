@@ -46,7 +46,21 @@ class Person {
     }
 
     pronostique() {
-        return Object.keys(this.f_pronostiques).length;
+        // return Object.keys(this.f_pronostiques).length;
+        let count = 0;
+        Object.values(obj.f_pronostiques).forEach(val => {
+            if (val == "oui"){
+                count++;
+            }
+          });
+        // for (let item in this.f_pronostiques){
+        //     //if (this.f_pronostiques[i].)
+        //     console.log(item + ' : ' + this.f_pronostiques.item);
+        //     if (this.f_pronostiques.item == "oui"){
+        //         count++;
+        //     }
+        // }
+        return count;
     }
 
     graviteMajeur() {
@@ -68,7 +82,13 @@ class Person {
     }
 
     symptome() {
-        return Object.keys(this.answers).length;
+        //return Object.keys(this.answers).length;
+        let count = 0;
+        Object.values(obj.answers).forEach(val => {
+            if (val == "oui"){
+                count++;
+            }
+          });
     }
 
     boubker() {
