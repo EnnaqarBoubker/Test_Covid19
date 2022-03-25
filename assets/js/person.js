@@ -47,7 +47,8 @@ class Person {
     }
 
     pronostique() {
-        return Object.keys(this.f_pronostiques).length;
+        //return Object.keys(this.f_pronostiques).length;
+        let count = 0;
     }
 
     graviteMajeur() {
