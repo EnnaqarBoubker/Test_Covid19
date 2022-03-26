@@ -42,4 +42,15 @@ btnTester.addEventListener("click", function(e){
     obj.getFacteurDeGraviteMajeur();
     obj.getFacteurDeGraviteMineur();
     e.preventDefault();
+
+    //cses 
+    globalThis.obj1 = new Person(40, 75, 175);
+    obj1.answers['fievre'] = 'oui';
+    obj1.answers['temperature'] = 35;
+
+    globalThis.obj2 = new Person(40, 75, 175);
+    obj2.answers['fievre'] = 'oui';
+    obj2.answers['temperature'] = 35;
+    obj2.answers['geneRespiratoire'] = 'oui';
+
 });

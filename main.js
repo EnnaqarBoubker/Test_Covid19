@@ -14,7 +14,8 @@ function testCovide19(obj) {
             } else if (obj.graviteMineur() >= 2) {
                 console.log(`Appele 414`);
             }
-        } else if (obj.graviteMajeur() >= 1) {
+        }
+        if (obj.graviteMajeur() >= 1) {
             console.log(`appele 141`);
         }
     }
