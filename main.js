@@ -10,7 +10,7 @@ function testCovide19(obj) {
             if (obj.gravite() == 0) {
                 console.log(`téléconsultation ou médecin généraliste ou visite à domicile`);
             } else if (obj.graviteMineur() >= 1) {
-                console.log(`téléconsultation ou médecin généraliste ou visite à domicile jjjjjjjjj`);
+                console.log(`téléconsultation ou médecin généraliste ou visite à domicile jjjjjjj`);
             } else if (obj.graviteMineur() >= 2) {
                 console.log(`Appele 414`);
             }
