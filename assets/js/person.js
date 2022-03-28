@@ -15,9 +15,6 @@ class Person {
     }
 
     gravite() {
-        // let x = this.f_graviteMajeur.length;
-        // let y = Object.keys(this.f_graviteMineur).length;
-        // return (x + y);
         return this.f_graviteMajeur.length + Object.keys(this.f_graviteMineur).length;
     }
 
