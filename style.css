@@ -1,6 +1,9 @@
 .header {
     background-image: url(../../photos/Merged\ bar-61.svg);
 }
+button a{
+    text-decoration: none;
+}
 
 .stepper-label {   
     color: #1078ad;
