@@ -52,7 +52,6 @@ function testcovid(obj) {
   }
 }
   //?     Pour tous :
- 
     console.log(
       `Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène.`
     );

@@ -50,13 +50,6 @@ class Person {
                 count++;
             }
           });
-        // for (let item in this.f_pronostiques){
-        //     //if (this.f_pronostiques[i].)
-        //     console.log(item + ' : ' + this.f_pronostiques.item);
-        //     if (this.f_pronostiques.item == "oui"){
-        //         count++;
-        //     }
-        // }
         return count;
     }
 
