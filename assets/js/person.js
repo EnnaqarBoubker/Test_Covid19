@@ -15,9 +15,6 @@ class Person {
     }
 
     gravite() {
-        // let x = this.f_graviteMajeur.length;
-        // let y = Object.keys(this.f_graviteMineur).length;
-        // return (x + y);
         return this.f_graviteMajeur.length + Object.keys(this.f_graviteMineur).length;
     }
 
@@ -53,13 +50,6 @@ class Person {
                 count++;
             }
           });
-        // for (let item in this.f_pronostiques){
-        //     //if (this.f_pronostiques[i].)
-        //     console.log(item + ' : ' + this.f_pronostiques.item);
-        //     if (this.f_pronostiques.item == "oui"){
-        //         count++;
-        //     }
-        // }
         return count;
     }
 
