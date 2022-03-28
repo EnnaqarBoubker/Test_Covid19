@@ -2,42 +2,36 @@
 function testcovid(obj) {
   //      ?Tout patient avec fièvre et toux :
   if (obj.answers["fievre"] == "oui" && obj.answers["toux"] == "oui") {
-    if (obj.pronostique() == 0) {
-      if (
-        obj.gravite() == 0 ||
-        (obj.graviteMineur() > 0 && obj.graviteMajeur() == 0)
-      ) {
-        console.log(
-          `téléconsultation ou médecin généraliste ou visite à domicile`
-        );
-      }
+    if (
+      obj.pronostique() == 0 &&
+      obj.gravite() >= 0 &&
+      obj.graviteMajeur() == 0
+    ) {
+      console.log(
+        `téléconsultation ou médecin généraliste ou visite à domicile 1111`
+      );
     } else if (obj.pronostique() >= 1) {
       if (obj.gravite() == 0) {
         console.log(
-          `téléconsultation ou médecin généraliste ou visite à domicile`
+          `téléconsultation ou médecin généraliste ou visite à domicile 222`
         );
       } else if (obj.graviteMineur() == 1) {
         console.log(
-          `téléconsultation ou médecin généraliste ou visite à domicile`
+          `téléconsultation ou médecin généraliste ou visite à domicile 333`
         );
       } else if (obj.graviteMineur() >= 2) {
         console.log(`appel 141`);
       }
-    } 
-    // TODO : undefiened
-    else if (obj.graviteMajeur() >= 1) {
-      console.log(`appel 141`);
     }
-    
   }
 
   //?     Tout patient avec un seul symptôme parmi fièvre, toux, mal de gorge, courbatures :
-  else if (obj.symptomeMoidreDoute() >= 1) {
+  else if (obj.symptomeMoidreDoute() == 1) {
     if (obj.gravite() == 0) {
       console.log(
-        `Votre situation ne relève probablement pas du Covid-19. Consultez votre médecin au moindre doute.`
+        `Votre situation ne relève probablement pas du Covid-19. Consultez votre médecin au moindre doute. 00`
       );
-    } else if (obj.gravite() >= 1 || obj.pronostique() >= 1) {
+    } else if ((obj.gravite() >= 1 && obj.pronostique() == 0) || (obj.gravite() == 0 && obj.pronostique() >= 1)) {
       console.log(
         `Votre situation ne relève probablement pas du Covid-19. Un avis médical est recommandé. Au moindre doute, appelez le 141.`
       );
@@ -51,10 +45,8 @@ function testcovid(obj) {
     );
   }
 }
-  //?     Pour tous :
- 
-    console.log(
-      `Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène.`
-    );
+//?     Pour tous :
 
-
+console.log(
+  `Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène.`
+);

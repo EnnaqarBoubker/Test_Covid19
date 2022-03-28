@@ -1,103 +1,115 @@
 class Person {
-    age;
-    piods;
-    taille;
-    answers = new Array();
-    f_pronostiques = new Array();
+  age;
+  piods;
+  taille;
+  answers = new Array();
+  f_pronostiques = new Array();
 
-    f_graviteMineur = new Array();
-    f_graviteMajeur = new Array();
+  f_graviteMineur = new Array();
+  f_graviteMajeur = new Array();
 
-    constructor(age, poids, taille) {
-        this.age = age;
-        this.poids = poids;
-        this.taille = taille;
+  constructor(age, poids, taille) {
+    this.age = age;
+    this.poids = poids;
+    this.taille = taille;
+  }
+
+  gravite() {
+    // let x = this.f_graviteMajeur.length;
+    // let y = Object.keys(this.f_graviteMineur).length;
+    // return (x + y);
+    return (
+      this.f_graviteMajeur.length + Object.keys(this.f_graviteMineur).length
+    );
+  }
+
+  getFacteurDeGraviteMajeur() {
+    if (parseFloat(this.answers["temperature"]) <= 35.4) {
+      this.f_graviteMajeur.push(this.answers["temperature"]);
     }
-
-    gravite() {
-        // let x = this.f_graviteMajeur.length;
-        // let y = Object.keys(this.f_graviteMineur).length;
-        // return (x + y);
-        return this.f_graviteMajeur.length + Object.keys(this.f_graviteMineur).length;
+    if (this.answers["geneRespiratoire"] == "oui") {
+      this.f_graviteMajeur.push(this.answers["geneRespiratoire"]);
     }
-
-    getFacteurDeGraviteMajeur() {
-        if (parseFloat(this.answers['temperature']) <= 35.4) {
-            this.f_graviteMajeur.push(this.answers['temperature']);
-        }
-        if (this.answers['geneRespiratoire'] == 'oui') {
-            this.f_graviteMajeur.push(this.answers['geneRespiratoire']);
-        }
-        if (this.answers['alimenterBoire'] == 'oui') {
-            this.f_graviteMajeur.push(this.answers['alimenterBoire']);
-        }
+    if (this.answers["alimenterBoire"] == "oui") {
+      this.f_graviteMajeur.push(this.answers["alimenterBoire"]);
     }
+  }
 
-    getFacteurDeGraviteMineur() {
-        if (parseFloat(this.answers['temperature']) >= 39) {
-            this.f_graviteMineur['temperature'] = this.answers['temperature'];
-        }
-        if (this.answers['fatigue'] == 'oui') {
-            this.f_graviteMineur['fatigue'] = this.answers['fatigue'];
-        }
-        if (this.answers['sentezVous'] == 'mal' || this.answers['sentezVous'] == 'tresMal') {
-            this.f_graviteMineur['sentezVous'] = this.answers['sentezVous'];
-        }
+  getFacteurDeGraviteMineur() {
+    if (parseFloat(this.answers["temperature"]) >= 39) {
+      this.f_graviteMineur["temperature"] = this.answers["temperature"];
     }
-
-    pronostique() {
-        // return Object.keys(this.f_pronostiques).length;
-        let count = 0;
-        Object.values(obj.f_pronostiques).forEach(val => {
-            if (val == "oui"){
-                count++;
-            }
-          });
-        // for (let item in this.f_pronostiques){
-        //     //if (this.f_pronostiques[i].)
-        //     console.log(item + ' : ' + this.f_pronostiques.item);
-        //     if (this.f_pronostiques.item == "oui"){
-        //         count++;
-        //     }
-        // }
-        return count;
+    if (this.answers["fatigue"] == "oui") {
+      this.f_graviteMineur["fatigue"] = this.answers["fatigue"];
     }
-
-    graviteMajeur() {
-        return Object.keys(this.f_graviteMajeur).length;
+    if (
+      this.answers["sentezVous"] == "mal" ||
+      this.answers["sentezVous"] == "tresMal"
+    ) {
+      this.f_graviteMineur["sentezVous"] = this.answers["sentezVous"];
     }
+  }
 
-    graviteMineur() {
-        return Object.keys(this.f_graviteMineur).length;
-    }
+  pronostique() {
+    // return Object.keys(this.f_pronostiques).length;
+    let count = 0;
+    Object.values(obj.f_pronostiques).forEach((val) => {
+      if (val == "oui") {
+        count++;
+      }
+    });
+    // for (let item in this.f_pronostiques){
+    //     //if (this.f_pronostiques[i].)
+    //     console.log(item + ' : ' + this.f_pronostiques.item);
+    //     if (this.f_pronostiques.item == "oui"){
+    //         count++;
+    //     }
+    // }
+    return count;
+  }
 
-    symptomeMoidreDoute() {
-        let counter = 0;
-        if (this.answers['fievre'] == 'oui') counter++;
-        if (this.answers['toux'] == 'oui') counter++;
-        if (this.answers['malGorge'] == "oui") counter++;
-        if (this.answers['douleursMusculaires'] == 'oui') counter++;
+  graviteMajeur() {
+    return Object.keys(this.f_graviteMajeur).length;
+  }
 
-        return counter;
-    }
+  graviteMineur() {
+    return Object.keys(this.f_graviteMineur).length;
+  }
 
-    symptome() {
-        //return Object.keys(this.answers).length;
-        let count = 0;
-        Object.values(obj.answers).forEach(val => {
-            if (val == "oui"){
-                count++;
-            }
-          });
-    }
+  symptomeMoidreDoute() {
+    let counter = 0;
+    if (this.answers["fievre"] == "oui") counter++;
+    if (this.answers["toux"] == "oui") counter++;
+    if (this.answers["malGorge"] == "oui") counter++;
+    if (this.answers["douleursMusculaires"] == "oui") counter++;
 
-    boubker() {
-        let isValid = false;
-        if (this.answers['fievre'] == 'oui') isValid = true;
-        if (this.answers['toux'] == 'oui' && this.answers['malGorge'] == 'oui') isValid = true;
-        if (this.answers['toux'] == 'oui' && this.answers['douleursMusculaires'] == 'oui') isValid = true;
-        if (this.answers['fievre'] == 'oui' && this.answers['diarrhee'] == 'oui') isValid = true;
+    return counter;
+  }
 
-        return isValid;
-    }
+  symptome() {
+    //return Object.keys(this.answers).length;
+    let count = 0;
+    Object.values(obj.answers).forEach((val) => {
+      if (val == "oui") {
+        count++;
+      }
+    });
+    return count;
+  }
+
+  boubker() {
+    let isValid = false;
+    if (this.answers["fievre"] == "oui") isValid = true;
+    if (this.answers["toux"] == "oui" && this.answers["malGorge"] == "oui")
+      isValid = true;
+    if (
+      this.answers["toux"] == "oui" &&
+      this.answers["douleursMusculaires"] == "oui"
+    )
+      isValid = true;
+    if (this.answers["fievre"] == "oui" && this.answers["diarrhee"] == "oui")
+      isValid = true;
+
+    return isValid;
+  }
 }
