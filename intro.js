@@ -18,15 +18,88 @@ info.classList.add("label-circle-ns");
 
 // Events : 
 //!______________________arrow function ___________________________________
-   startTest.addEventListener("click", () => {
-  informations.classList.remove("label-circle-s");
-  informations.classList.add("label-circle-ns");
-  questions.classList.remove("label-circle-ns");
-  questions.classList.add("label-circle-s");
+  //  startTest.addEventListener("click", () => {
+  //   informations.classList.remove("label-circle-s");
+  //   informations.classList.add("label-circle-ns");
+  //   questions.classList.remove("label-circle-ns");
+  //   questions.classList.add("label-circle-s");
+  // });
+
+  //todo__________________________had fonction dyal resultat______________________________________
+
+
+//   const resultats = document.querySelector("#result");
+//   const btntst = document.querySelector("#btnSuivant");
+//   answers.classList.add("label-circle-ns");
+//   answers.classList.remove("label-circle-s");
+//   result.classList.add("label-circle-s");
+//  result.classList.add("label-circle-ns");
+
+  //todo___________________________________________________________________________________________
+let progress_bar = document.querySelector(".progress-bar");
+let btn_next = document.getElementById("btnSuivant");
+let btn_prec = document.getElementById("btnPrecedant");
+let nbr_Q = document.querySelector(".nbr-Q");
+
+let prog = 4.34;
+let nbrQ = 1;
+
+btn_next.addEventListener("click",()=>{
+  prog += 4.34;
+ if(prog < 100){
+  nbrQ++;
+  progress_bar.style.width = prog +"%";
+  nbr_Q.innerHTML = nbrQ + "/23";
+  console.log(prog);
+ }
+})
+
+btn_prec.addEventListener("click",()=>{
+  prog -= 4.34;
+  if(prog >= 4.34 ){
+   nbrQ--;
+   progress_bar.style.width = prog +"%";
+   nbr_Q.innerHTML = nbrQ + "/23";
+   console.log(prog);
+  }
+})
 
 
 
-  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //!______________________function annonyme___________________________________
 
   // startTest.addEventListener("click", function(){
@@ -40,12 +113,3 @@ info.classList.add("label-circle-ns");
 
 
   
-//   const resultats = document.querySelector("#result");
-//   const btntst = document.querySelector("#btnSuivant");
-
-//   btnSuivant.addEventListener("click", ()=>{
-//   answers.classList.remove("label-circle-ns");
-//   answers.classList.remove("label-circle-s");
-//   resultats.classList.add("label-circle-s");
-//   resultats.classList.add("label-circle-ns");
-// });
