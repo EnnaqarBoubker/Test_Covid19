@@ -58,6 +58,8 @@ btnTester.addEventListener("click", function(e){
 
     obj.getFacteurDeGraviteMajeur();
     obj.getFacteurDeGraviteMineur();
+
+    testCovide19(obj);
     e.preventDefault();
 
     //cses 
@@ -73,21 +75,21 @@ btnTester.addEventListener("click", function(e){
     // globalThis.obj3 = new Person()
 
     //Patient avec fièvre, ou toux + mal de gorge, ou toux + courbatures ou fièvre + diarrhée :
-    globalThis.obj0 = new Person(27, 75, 178);
-    obj0.answers['fievre'] = 'oui';
-    obj0.f_pronostiques.length = 0; //sans facteurs pronostiques
+    // globalThis.obj0 = new Person(27, 75, 178);
+    // obj0.answers['fievre'] = 'oui';
+    // obj0.f_pronostiques.length = 0; //sans facteurs pronostiques
 
-    globalThis.obj1 = new Person(27, 75, 178);
-    obj1.answers['toux'] = "oui";
-    obj1.answers['malGorge'] = "oui";
+    // globalThis.obj1 = new Person(27, 75, 178);
+    // obj1.answers['toux'] = "oui";
+    // obj1.answers['malGorge'] = "oui";
 
-    globalThis.obj2 = new Person(27, 75, 178);
-    obj2.answers['toux'] = 'oui';
-    obj2.answers['douleursMusculaires'] = 'oui'; //courbatures
+    // globalThis.obj2 = new Person(27, 75, 178);
+    // obj2.answers['toux'] = 'oui';
+    // obj2.answers['douleursMusculaires'] = 'oui'; //courbatures
 
 
-    globalThis.obj3 = new Person(27, 75, 178);
-    obj3.answers['fievre'] = 'oui';
-    obj3.answers['diarrhee'] = 'oui';
+    // globalThis.obj3 = new Person(27, 75, 178);
+    // obj3.answers['fievre'] = 'oui';
+    // obj3.answers['diarrhee'] = 'oui';
 
 });
