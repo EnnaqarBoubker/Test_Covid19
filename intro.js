@@ -28,12 +28,14 @@ info.classList.add("label-circle-ns");
   //todo__________________________had fonction dyal resultat______________________________________
 
 
-//   const resultats = document.querySelector("#result");
-//   const btntst = document.querySelector("#btnSuivant");
-//   answers.classList.add("label-circle-ns");
-//   answers.classList.remove("label-circle-s");
-//   result.classList.add("label-circle-s");
-//  result.classList.add("label-circle-ns");
+  //const resultats = document.querySelector("#result");
+  //const btntst = document.querySelector("#btnSuivant");
+  function resultatProgress() {
+    answers.classList.add("label-circle-ns");
+    answers.classList.remove("label-circle-s");
+    result.classList.add("label-circle-s");
+    result.classList.add("label-circle-ns");
+  }
 
   //todo___________________________________________________________________________________________
 let progress_bar = document.querySelector(".progress-bar");
@@ -51,6 +53,9 @@ btn_next.addEventListener("click",()=>{
   progress_bar.style.width = prog +"%";
   nbr_Q.innerHTML = nbrQ + "/23";
   console.log(prog);
+ }
+ if (nbrQ == 23){
+   document.getElementById('btnSuivant').style.visibility = "hidden";
  }
 })
 
