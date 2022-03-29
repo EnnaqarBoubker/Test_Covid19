@@ -79,6 +79,7 @@ class Person {
                 count++;
             }
           });
+          return count;
     }
 
     boubker() {
