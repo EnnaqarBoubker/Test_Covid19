@@ -1,4 +1,7 @@
 let buttons = document.querySelectorAll(".btn");
+let btnSuivant = document.getElementById("btnSuivant");
+//btnSuivant.disabled = true;
+
 
 buttons.forEach(btn => {
     btn.addEventListener("click", function(){
@@ -10,7 +13,7 @@ buttons.forEach(btn => {
         }
     });
 });
-
+document.getElementById('btnTester').style.visibility = "hidden";
 let btnTester = document.getElementById("btnTester");
 
 //are > pronostique
@@ -59,7 +62,10 @@ btnTester.addEventListener("click", function(e){
     obj.getFacteurDeGraviteMajeur();
     obj.getFacteurDeGraviteMineur();
 
-    testCovide19(obj);
+    if(!testCovide19(obj)){
+        testcovid(obj);
+    }
+
     e.preventDefault();
 
     //cses 

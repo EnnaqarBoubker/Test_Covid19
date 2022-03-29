@@ -1,4 +1,4 @@
-console.log("js est liee")
+//console.log("js est liee")
 //todo page introduction
 
 const startTest = document.querySelector("#startest");
@@ -49,13 +49,14 @@ let nbrQ = 1;
 btn_next.addEventListener("click",()=>{
   prog += 4.34;
  if(prog < 100){
-  nbrQ++;
-  progress_bar.style.width = prog +"%";
-  nbr_Q.innerHTML = nbrQ + "/23";
-  console.log(prog);
+    nbrQ++;
+    progress_bar.style.width = prog +"%";
+    nbr_Q.innerHTML = nbrQ + "/23";
+    //console.log(prog);
  }
  if (nbrQ == 23){
    document.getElementById('btnSuivant').style.visibility = "hidden";
+   document.getElementById('btnTester').style.visibility = "visible";
  }
 })
 
@@ -65,7 +66,7 @@ btn_prec.addEventListener("click",()=>{
    nbrQ--;
    progress_bar.style.width = prog +"%";
    nbr_Q.innerHTML = nbrQ + "/23";
-   console.log(prog);
+   //console.log(prog);
   }
 })
 
