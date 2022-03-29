@@ -7,20 +7,29 @@ function testcovid(obj) {
       obj.gravite() >= 0 &&
       obj.graviteMajeur() == 0
     ) {
-      console.log(
-        `téléconsultation ou médecin généraliste ou visite à domicile 1111`
-      );
+      // console.log(
+      //   `téléconsultation ou médecin généraliste ou visite à domicile 1111`
+      // );
+      let msg =  `téléconsultation ou médecin généraliste ou visite à domicile`;
+      document.getElementById('msg').innerText = msg;
+
     } else if (obj.pronostique() >= 1) {
       if (obj.gravite() == 0) {
-        console.log(
-          `téléconsultation ou médecin généraliste ou visite à domicile 222`
-        );
+        // console.log(
+        //   `téléconsultation ou médecin généraliste ou visite à domicile 222`
+        // );
+        let msg =  `téléconsultation ou médecin généraliste ou visite à domicile`;
+        document.getElementById('msg').innerText = msg;
       } else if (obj.graviteMineur() == 1) {
-        console.log(
-          `téléconsultation ou médecin généraliste ou visite à domicile 333`
-        );
+        // console.log(
+        //   `téléconsultation ou médecin généraliste ou visite à domicile 333`
+        // );
+        let msg =  `téléconsultation ou médecin généraliste ou visite à domicile`;
+        document.getElementById('msg').innerText = msg;
       } else if (obj.graviteMineur() >= 2) {
-        console.log(`appel 141`);
+        // console.log(`appel 141`);
+        let msg =  `appel 141`;
+        document.getElementById('msg').innerText = msg;
       }
     }
   }
